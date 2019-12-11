@@ -14,7 +14,7 @@ ResultView.render = function(data = [] ){
 }//this는 ResultView
 
 ResultView.getSearchResultHtml = function(data){
-  // ResultView.show()//추가함
+  ResultView.show()//추가함
   return data.reduce((html,item)=>{
     html += this.getSearchItemHtml(item)
     return html
